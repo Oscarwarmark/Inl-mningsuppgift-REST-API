@@ -1,0 +1,30 @@
+GET http://localhost:3000/hej
+
+###
+
+POST http://localhost:3000/mountains/add
+Content-Type: application/json
+
+{
+    "id": "128",
+    "name": "Galdhøpiggen",
+    "hight": 2469,
+    "country": "Norway"
+}
+
+###
+
+DELETE http://localhost:3000/mountains/128
+
+
+###
+
+PUT http://localhost:3000/mountains/123
+Content-Type: application/json
+
+{
+    "name": "Mont blanc",
+    "hight": 4807,
+    "country": "France/Italy"
+}
+

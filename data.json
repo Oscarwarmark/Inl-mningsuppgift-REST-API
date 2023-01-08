@@ -1,0 +1,38 @@
+[
+  {
+    "id": "123",
+    "name": "Mont blanc",
+    "hight": 4807,
+    "country": "France/Italy"
+  },
+  {
+    "id": "124",
+    "name": "Denali",
+    "hight": 6190,
+    "country": "North America"
+  },
+  {
+    "id": "125",
+    "name": "Matterhorn",
+    "hight": 4478,
+    "country": "Schweiz"
+  },
+  {
+    "id": "126",
+    "name": "Kebnekaise",
+    "hight": 2096,
+    "country": "Sweden"
+  },
+  {
+    "id": "127",
+    "name": "kilimanjaro",
+    "hight": 5895,
+    "country": "tanzania"
+  },
+  {
+    "id": "128",
+    "name": "Galdhøpiggen",
+    "hight": 2469,
+    "country": "Norway"
+  }
+]
