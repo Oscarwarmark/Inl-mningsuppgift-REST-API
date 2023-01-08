@@ -9,7 +9,7 @@ app.use(express.json());
 app.get("/mountains", (req, res) => {
   fs.readFile("data.json", function (err, data) {
     if (err) {
-      console.log(err);
+      res.status(404).send("error");
     }
     const mountains = JSON.parse(data);
 
@@ -23,7 +23,7 @@ app.get("/mountains", (req, res) => {
 app.post("/mountains/add", (req, res) => {
   fs.readFile("data.json", function (err, data) {
     if (err) {
-      console.log(err);
+      res.status(404).send("error");
     }
     const mountains = JSON.parse(data);
 
@@ -36,7 +36,7 @@ app.post("/mountains/add", (req, res) => {
       JSON.stringify(mountains, null, 2),
       function (err) {
         if (err) {
-          console.log(err);
+          res.status(404).send("error");
         } else {
           res.send(mountains);
         }
@@ -85,7 +85,7 @@ app.put("/mountains/:id", (req, res) => {
     const mountains = JSON.parse(data);
     const id = mountains.find((mountains) => mountains.id == req.params.id);
 
-    if (!id) {
+    if (id >= 0) {
       res.status(404).send("id was not found");
     } else {
       mountains.find((id) => {

@@ -1,10 +1,10 @@
-# Inl-mningsuppgift-REST-API
+# Inlämningsuppgift-REST-API
 
 # beskrivning av projektet
 
 I mitt projekt har jag valt att ha olika berg runt om i världen. Varje berg har 4st egenskaper Id, namm, höjd, och de land berget ligger i. API:et har funktionalitet för CRUD och har 4st endpoints GET, POST, DELETE och PUT.
 
-För att testa projektet:
+# För att testa projektet:
 
 1. Öppna projektet i vscode
 2. Öpnna terminalen och skriv npm install, för att installera projektets dependencies.
