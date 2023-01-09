@@ -1,4 +1,4 @@
-# Inlämningsuppgift-REST-API
+# Inlämningsuppgift REST-API
 
 # beskrivning av projektet
 

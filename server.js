@@ -4,7 +4,7 @@ const app = express();
 const fs = require("fs");
 app.use(express.json());
 
-//hämtar datan
+//Hämtar datan
 
 app.get("/mountains", (req, res) => {
   fs.readFile("data.json", function (err, data) {
@@ -18,7 +18,7 @@ app.get("/mountains", (req, res) => {
   });
 });
 
-//lägger till ny data
+//Lägger till ny data
 
 app.post("/mountains/add", (req, res) => {
   fs.readFile("data.json", function (err, data) {
@@ -46,7 +46,7 @@ app.post("/mountains/add", (req, res) => {
   });
 });
 
-//tar bort data
+//Tar bort data
 
 app.delete("/mountains/:id", (req, res) => {
   fs.readFile("data.json", function (err, data) {

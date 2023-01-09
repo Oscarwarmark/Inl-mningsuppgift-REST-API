@@ -27,4 +27,3 @@ Content-Type: application/json
     "hight": 4807,
     "country": "France/Italy"
 }
-
