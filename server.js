@@ -31,10 +31,7 @@ app.post("/mountains/add", (req, res) => {
 
     mountains.push(newdata);
 
-    fs.writeFile(
-      "data.json",
-      JSON.stringify(mountains, null, 2),
-      function (err) {
+    fs.writeFile("data.json",JSON.stringify(mountains, null, 2), function (err) {
         if (err) {
           res.status(404).send("error");
         } else {
@@ -63,10 +60,7 @@ app.delete("/mountains/:id", (req, res) => {
         res.status(404).send("Couldn't find id");
       }
 
-      fs.writeFile(
-        "data.json",
-        JSON.stringify(mountains, null, 2),
-        function (err) {
+      fs.writeFile("data.json",JSON.stringify(mountains, null, 2), function (err) {
           if (err) {
             res.status(404).send("error");
           } else {
@@ -96,10 +90,7 @@ app.put("/mountains/:id", (req, res) => {
         }
       });
     }
-    fs.writeFile(
-      "data.json",
-      JSON.stringify(mountains, null, 2),
-      function (err) {
+    fs.writeFile("data.json",JSON.stringify(mountains, null, 2), function (err) {
         if (err) {
           res.status(404).send("error");
         } else {
