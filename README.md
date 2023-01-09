@@ -1,8 +1,8 @@
 # Inlämningsuppgift REST-API
 
-# beskrivning av projektet
+# Beskrivning av projektet
 
-I mitt projekt har jag valt att ha olika berg runt om i världen. Varje berg har 4st egenskaper Id, namm, höjd, och de land berget ligger i. API:et har funktionalitet för CRUD och har 4st endpoints GET, POST, DELETE och PUT.
+I mitt projekt har jag valt att ha olika berg runt om i världen. Varje berg har 4st egenskaper Id, namm, höjd, och de land berget ligger i. API:et har funktionalitet för CRUD och har 4st endpoints GET, POST, DELETE och PUT. Projektet är byggt med Node/Express-server.
 
 # För att testa projektet:
 
